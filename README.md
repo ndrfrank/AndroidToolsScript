@@ -10,7 +10,7 @@ Java
 
 Building from source
 
-git clone https://github.com/ndrfrank/AndroidToolsScript/AndroidTools
+git clone https://github.com/ndrfrank/AndroidToolsScript
 
 Run
 chmod 755 AndroidTools
