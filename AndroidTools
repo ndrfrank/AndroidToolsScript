@@ -1,0 +1,47 @@
+#!/bin/bash
+
+#Downloading Tools for Android Analysis
+mkdir Tools
+cd Tools/
+echo "***Starting Download of Java***"
+
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+
+sudo apt-get install oracle-java8-set-default
+
+echo "Starting Download of Android Studio"
+echo "Redirecting to Android Studio Homepage for download"
+
+wget "https://developer.android.com/studio/index.html#linux-bundle"
+
+echo "Sleeping for 5 minutes to download file"
+sleep 5m
+
+unzip android-studio-ide-162.4069837-linux.zip -d /opt
+
+echo "Adding Android Studio to Path.... to run Android Studio type studio.sh"
+export PATH=$PATH:/opt/android-studio/bin
+
+sleep 5
+
+echo "Installing Jdax"
+
+git clone https://github.com/skylot/jadx.git
+
+cd jadx
+./gradlew dist
+cd /build/jadx
+
+export PATH=$PATH:$PWD
+
+cd ../../../
+
+echo "installing APKTool"
+
+apt-get install apktool
+
+sleep 5
+
+echo "****Install Complete*****"
