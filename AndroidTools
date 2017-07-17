@@ -5,11 +5,11 @@ mkdir Tools
 cd Tools/
 echo "***Starting Download of Java***"
 
-sudo add-apt-repository ppa:webupd8team/java
+#sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
-sudo apt-get install oracle-java8-installer
-
-sudo apt-get install oracle-java8-set-default
+#sudo apt-get install oracle-java8-installer
+sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
+#sudo apt-get install oracle-java8-set-default
 
 echo "Starting Download of Android Studio"
 echo "Redirecting to Android Studio Homepage for download"
