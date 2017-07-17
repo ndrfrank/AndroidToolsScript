@@ -14,7 +14,7 @@ sudo apt-get install oracle-java8-set-default
 echo "Starting Download of Android Studio"
 echo "Redirecting to Android Studio Homepage for download"
 
-firefox-browser https://developer.android.com/studio/index.html#linux-bundle
+firefox https://developer.android.com/studio/index.html#linux-bundle
 
 echo " Once download is complete press any key"
 
