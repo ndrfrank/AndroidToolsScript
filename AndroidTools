@@ -23,10 +23,6 @@ Press any key to continue...
 
 unzip android-studio-ide-162.4069837-linux.zip -d /opt
 
-
-
-unzip android-studio-ide-162.4069837-linux.zip -d /opt
-
 echo "Adding Android Studio to Path.... to run Android Studio type studio.sh"
 export PATH=$PATH:/opt/android-studio/bin
 
