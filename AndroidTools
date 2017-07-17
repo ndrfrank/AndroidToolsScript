@@ -14,10 +14,16 @@ sudo apt-get install oracle-java8-set-default
 echo "Starting Download of Android Studio"
 echo "Redirecting to Android Studio Homepage for download"
 
-wget "https://developer.android.com/studio/index.html#linux-bundle"
+firefox-browser https://developer.android.com/studio/index.html#linux-bundle
 
-echo "Sleeping for 5 minutes to download file"
-sleep 5m
+echo " Once download is complete press any key"
+
+read -rsp $'Press any key to continue...\n' -n1 key
+Press any key to continue...
+
+unzip android-studio-ide-162.4069837-linux.zip -d /opt
+
+
 
 unzip android-studio-ide-162.4069837-linux.zip -d /opt
 
